@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Happy Birthday Wasthu ❤️ | A Little Piece of My Heart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Paper Texture & Ambient Elements -->
+  <div class="paper-grain-overlay"></div>
+  <div class="sakura-hearts-layer" id="sakuraHeartsLayer" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       0. SEALED ENVELOPE OPENING SCREEN (FIRST IMPRESSION)
+       =================================================================== -->
+  <div class="envelope-intro-overlay" id="envelopeIntro" aria-label="Sealed Birthday Envelope">
+    <div class="envelope-stage">
+
+      <div class="envelope-top-badge">✨ 25th Birthday Edition • 2026</div>
+      <div class="envelope-caption-top handwritten">
+        A special birthday letter for you, Wasthu 💌
+      </div>
+
+      <div class="paper-envelope" id="paperEnvelope" role="button" tabindex="0"
+        aria-label="Tap to open your birthday envelope">
+        <div class="env-back"></div>
+
+        <!-- Luxury Letter Card Inside -->
+        <div class="env-letter-sheet">
+          <div class="env-letter-washi"></div>
+          <div class="env-letter-inner">
+            <span class="env-letter-mini-tag">🎂 25th Birthday Wish</span>
+            <span class="env-letter-heading handwritten">Happy Birthday Wasthu ❤️</span>
+            <p class="env-letter-snippet">Mage pana, ada oyage dawasa...</p>
+          </div>
+        </div>
+
+        <!-- Envelope Front Pocket Flaps -->
+        <div class="env-pocket-left"></div>
+        <div class="env-pocket-right"></div>
+        <div class="env-pocket-bottom-wrap">
+          <div class="env-pocket-bottom"></div>
+        </div>
+
+        <!-- Handwritten Address on the Lower Front -->
+        <div class="env-front-details">
+          <p class="env-to handwritten">For: <span>My Love ❤️</span></p>
+          <p class="env-route">Sri Lanka 🇱🇰 ✈ Japan 🇯🇵</p>
+        </div>
+
+        <!-- Top Triangular Flap -->
+        <div class="env-flap-wrap" id="envFlapWrap">
+          <div class="env-flap-top">
+            <div class="env-flap-stamp">
+              <span>🌸</span>
+              <small>25th</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embossed Wax Seal Button -->
+        <button class="env-wax-seal" id="openEnvelopeBtn" type="button" aria-label="Tap wax seal to open letter">
+          <span class="seal-inner-ring">
+            <span class="seal-heart">🤍</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="envelope-tap-prompt">
+        <span class="tap-pill" id="tapEnvelopePrompt">✨ Tap the wax seal to open</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Lightbox Modal for Tap-to-View Photos on Phone -->
+  <div class="photo-lightbox" id="photoLightbox">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">✕</button>
+      <div class="lightbox-image-wrap">
+        <img src="" alt="Enlarged Memory" id="lightboxImg">
+      </div>
+      <p class="lightbox-caption handwritten" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       1. OPENING BIRTHDAY WISH & ENVELOPE COVER
+       =================================================================== -->
+  <section class="hero-cover-section" id="cover">
+    <div class="envelope-wrapper">
+
+      <!-- Vintage Postage Stamp & Postmark -->
+      <div class="postage-stamp">
+        <div class="stamp-inner">
+          <span class="stamp-symbol">💌</span>
+          <span class="stamp-date">Special Day</span>
+          <span class="stamp-tag">To Wasthu</span>
+        </div>
+      </div>
+      <div class="postmark-circle">
+        <span>COLOMBO ✈ TOKYO</span>
+        <span class="postmark-sub">WITH ALL MY LOVE</span>
+      </div>
+
+      <!-- Diary Notebook Cover / Envelope Front -->
+      <div class="notebook-card intro-letter">
+        <div class="washi-tape tape-top"></div>
+        <div class="craft-tag">A Little Birthday Surprise • 2026</div>
+
+        <h1 class="main-title handwritten editable" data-key="hero_title">Happy Birthday Wasthu ❤️</h1>
+        <p class="subtitle handwritten editable" data-key="hero_subtitle">To the kindest soul, my safe place, and the
+          boy who holds my entire heart...</p>
+
+        <div class="letter-preview paper-sheet">
+          <p class="personal-note editable" data-key="hero_letter">
+            Happy Birthday Wasthu! ❤️🥺<br><br>
+
+            අද ඔයාගේ දවස. මට පුළුවන් නම් අද දවසේ ඔයා ළඟටම ඇවිත් ඔයාව hug කරලා, Happy Birthday කියන්න තිබුණා.
+
+            දුරින් හිටියත් මගේ හිත හැමදාම තියෙන්නේ ඔයා ළඟ. අපි දෙන්නා අතරේ කොච්චර දේවල් වුණත්, කොච්චර ප්‍රශ්න ආවත්, මට
+            හැමදාම ඕනේ ඔයා එක්කම මේ ගමන ඉස්සරහට යන්න.
+
+            Thank you for being my person. මට හයියක් වුණාට, මාව තේරුම් ගන්න උත්සාහ කරනවට, අපේ ප්‍රශ්න විසඳගෙන අපි දෙන්නා
+            වෙනුවෙන් තවමත් උත්සාහ කරනවට.
+
+            I don't know what the future will look like, but I really want you to be in mine.
+
+            මගේ එකම wish එක ඔයාගේ හැම හීනයක්ම හැබෑ වෙන්න ඕනේ. ඔයා හැමදාම සතුටින් ඉන්න ඕනේ. ඒ වගේම අපි දෙන්නටත් ඉක්මනට
+            එකට ඉන්න දවසක් එන්න ඕනේ.
+
+            I love you, Wasthu. More than I can explain. ❤️
+
+            Once again, Happy Birthday, my favourite person! 🥺.<br><br>
+            <em>Suba upandinayak wewa mage pana. Always proud of you, always praying for you, always yours.</em>
+          </p>
+        </div>
+
+        <!-- Interactive 25th Birthday Cake & Candle -->
+        <div class="birthday-cake-box" id="birthdayCakeBox">
+          <div class="cake-box-label handwritten">Make a birthday wish & blow out the candle 🕯️</div>
+
+          <div class="cake-interactive-stage" id="cakeStage" role="button" tabindex="0"
+            aria-label="Tap to blow out the birthday candle">
+            <!-- Revealed "25" Milestone (Displays when candle is blown out) -->
+            <div class="cake-25-reveal" id="cake25Reveal" aria-live="polite">
+              <div class="reveal-sparkles" aria-hidden="true">
+                <span>✨</span><span>💜</span><span>✨</span>
+              </div>
+              <span class="badge-25 handwritten">25</span>
+              <span class="text-25 handwritten">Happy 25th Birthday, Wasthu! 💜</span>
+            </div>
+
+            <!-- Boutique White-Purple Illustrated Cake -->
+            <div class="cake-illustration">
+              <!-- Animated Flame & Rising Smoke positioned cleanly above wick -->
+              <div class="cake-flame-anchor">
+                <div class="candle-smoke">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="candle-flame" id="candleFlame"></div>
+              </div>
+
+              <svg class="boutique-cake-svg" viewBox="0 0 260 218" width="240" height="202" aria-hidden="true">
+                <defs>
+                  <linearGradient id="standGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FFFFFF" />
+                    <stop offset="100%" stop-color="#D7C1F2" />
+                  </linearGradient>
+                  <linearGradient id="bottomTierGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FBF8FE" />
+                    <stop offset="100%" stop-color="#EADDFB" />
+                  </linearGradient>
+                  <linearGradient id="topTierGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FFFFFF" />
+                    <stop offset="100%" stop-color="#F5ECFD" />
+                  </linearGradient>
+                  <linearGradient id="dripTopGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#C8A5F2" />
+                    <stop offset="100%" stop-color="#A678E0" />
+                  </linearGradient>
+                  <linearGradient id="dripBottomGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#A87CE3" />
+                    <stop offset="100%" stop-color="#7E4EBD" />
+                  </linearGradient>
+                  <linearGradient id="ribbonGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#6A3D9E" />
+                    <stop offset="50%" stop-color="#8B5FBF" />
+                    <stop offset="100%" stop-color="#6A3D9E" />
+                  </linearGradient>
+                  <pattern id="candleStripes" width="8" height="8" patternUnits="userSpaceOnUse"
+                    patternTransform="rotate(-40)">
+                    <rect width="8" height="8" fill="#FFFFFF" />
+                    <rect width="4" height="8" fill="#9A6CD6" />
+                  </pattern>
+                </defs>
+
+                <!-- Pedestal Cake Stand -->
+                <ellipse cx="130" cy="208" rx="58" ry="6" fill="rgba(106, 61, 158, 0.14)" />
+                <path d="M96 206 Q130 195 164 206 L146 195 Q130 191 114 195 Z" fill="url(#standGrad)" stroke="#CDB8EA"
+                  stroke-width="1" />
+                <path d="M122 175 L138 175 L142 196 Q130 199 118 196 Z" fill="url(#standGrad)" />
+                <ellipse cx="130" cy="173" rx="94" ry="12" fill="#FFFFFF" stroke="#D3BDF0" stroke-width="1.4" />
+                <ellipse cx="130" cy="170.5" rx="86" ry="8" fill="#F7F1FE" />
+
+                <!-- Bottom Cake Tier -->
+                <rect x="46" y="114" width="168" height="56" rx="10" fill="url(#bottomTierGrad)" stroke="#D9C3F4"
+                  stroke-width="1.2" />
+                <ellipse cx="130" cy="114" rx="84" ry="8" fill="#FAF7FE" />
+
+                <!-- Bottom Tier Ganache Drips -->
+                <path
+                  d="M46 114 Q130 122 214 114 L214 128 Q206 138 198 127 Q189 144 180 128 Q170 137 161 126 Q150 146 139 127 Q130 137 121 127 Q110 145 99 127 Q89 138 80 128 Q70 143 61 127 Q53 136 46 128 Z"
+                  fill="url(#dripBottomGrad)" />
+
+                <!-- Satin Purple Ribbon & Bow -->
+                <rect x="46" y="156" width="168" height="9" fill="url(#ribbonGrad)" />
+                <path d="M130 160.5 L117 154 Q112 160.5 117 167 Z" fill="#623596" />
+                <path d="M130 160.5 L143 154 Q148 160.5 143 167 Z" fill="#623596" />
+                <circle cx="130" cy="160.5" r="3.6" fill="#A678E0" stroke="#FFFFFF" stroke-width="0.9" />
+
+                <!-- Delicate Pearl Dots along Bottom Rim -->
+                <g fill="#FFFFFF" opacity="0.92">
+                  <circle cx="56" cy="168" r="2.6" />
+                  <circle cx="68" cy="169" r="2.6" />
+                  <circle cx="80" cy="169.5" r="2.6" />
+                  <circle cx="92" cy="170" r="2.6" />
+                  <circle cx="104" cy="170" r="2.6" />
+                  <circle cx="116" cy="170.5" r="2.6" />
+                  <circle cx="144" cy="170.5" r="2.6" />
+                  <circle cx="156" cy="170" r="2.6" />
+                  <circle cx="168" cy="170" r="2.6" />
+                  <circle cx="180" cy="169.5" r="2.6" />
+                  <circle cx="192" cy="169" r="2.6" />
+                  <circle cx="204" cy="168" r="2.6" />
+                </g>
+
+                <!-- Top Cake Tier -->
+                <rect x="72" y="65" width="116" height="49" rx="9" fill="url(#topTierGrad)" stroke="#E3D2F7"
+                  stroke-width="1.2" />
+                <ellipse cx="130" cy="65" rx="58" ry="7" fill="#FFFFFF" />
+
+                <!-- Top Tier Soft Lavender Ganache Drips -->
+                <path
+                  d="M72 65 Q130 72 188 65 L188 78 Q181 88 173 77 Q164 93 155 78 Q145 86 137 77 Q128 94 119 77 Q110 86 102 78 Q92 92 84 77 Q77 85 72 77 Z"
+                  fill="url(#dripTopGrad)" />
+
+                <!-- Cream Piped Swirls on Top Rim -->
+                <g fill="#FFFFFF" stroke="#E4D4F7" stroke-width="0.8">
+                  <circle cx="86" cy="65" r="6" />
+                  <circle cx="101" cy="63" r="6.5" />
+                  <circle cx="116" cy="62" r="6.5" />
+                  <circle cx="144" cy="62" r="6.5" />
+                  <circle cx="159" cy="63" r="6.5" />
+                  <circle cx="174" cy="65" r="6" />
+                </g>
+
+                <!-- Gold & Lilac Sugar Pearls -->
+                <circle cx="94" cy="96" r="2.4" fill="#C89B58" />
+                <circle cx="112" cy="102" r="2" fill="#9A6CD6" />
+                <circle cx="133" cy="98" r="2.5" fill="#C89B58" />
+                <circle cx="152" cy="103" r="2" fill="#9A6CD6" />
+                <circle cx="168" cy="95" r="2.4" fill="#C89B58" />
+                <circle cx="76" cy="144" r="2.3" fill="#C89B58" />
+                <circle cx="106" cy="148" r="2.1" fill="#8B5FBF" />
+                <circle cx="154" cy="148" r="2.1" fill="#8B5FBF" />
+                <circle cx="184" cy="144" r="2.3" fill="#C89B58" />
+
+                <!-- Candle & Wick -->
+                <ellipse cx="130" cy="63" rx="9" ry="2.6" fill="#E3D2F7" />
+                <rect x="124.5" y="28" width="11" height="35" rx="3" fill="url(#candleStripes)" stroke="#CBB2EC"
+                  stroke-width="1" />
+                <line x1="130" y1="28" x2="130" y2="21" stroke="#4C3D5E" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+
+          <p class="cake-tap-hint" id="cakeTapHint">
+            ✨ Tap the cake to blow out the candle
+          </p>
+        </div>
+
+        <div class="hero-cta-wrap">
+          <button class="btn-journal" id="openSurpriseBtn">
+            <span>Open my little surprise</span>
+            <span class="arrow-icon">📖</span>
+          </button>
+          <span class="sub-hint">Made specially for your eyes only • Tap photos to view full size</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================================================================
+       MAIN JOURNAL CONTENT (REVEALED SMOOTHLY)
+       =================================================================== -->
+  <main class="journal-container" id="journalContent">
+
+    <!-- Table of Contents / Bookmark Navigation -->
+    <nav class="journal-nav">
+      <div class="nav-ribbon">
+        <a href="#childhood" class="nav-tab">🧸 Little Adhi</a>
+        <a href="#story" class="nav-tab">⏳ Our Story (2019–2026)</a>
+        <a href="#letters" class="nav-tab">💌 Letters for You</a>
+        <a href="#voice" class="nav-tab">🎙️ My Voice</a>
+        <a href="#future" class="nav-tab">✈️Japan</a>
+      </div>
+    </nav>
+
+
+    <!-- ===================================================================
+         2. HIS CHILDHOOD: NATURAL SCRAPBOOK PHOTO ALBUM
+         =================================================================== -->
+    <section class="section-block" id="childhood">
+      <div class="section-header">
+        <div class="tape-strip"></div>
+        <span class="chapter-number">Chapter 01</span>
+        <h2 class="section-title handwritten editable" data-key="childhood_title">Podi kale Oya
+        </h2>
+        <p class="section-desc editable" data-key="childhood_desc">Before you were my world, you were this innocent
+          little boy with the sweetest smile. I will always treasure the person you grew up to be.</p>
+      </div>
+
+      <div class="scrapbook-gallery-focus">
+
+        <!-- Main Real Childhood Photo 01 -->
+        <article class="polaroid-card polaroid-hero tilt-left" data-photo-id="childhood-1">
+          <div class="pin-sticker">📌</div>
+          <div class="photo-frame portrait-frame">
+            <img src="images/childhood-1.jpg" alt="Wasthu Childhood Moment" class="scrapbook-img photo-portrait-top"
+              data-caption="Mage Chuti Wasthuwa • Daham pasal giya kale, white national kit eken inna innocent smile eka 🧸 That innocent boy who grew up to steal my whole heart.">
+            <div class="photo-overlay-upload">
+              <span>📷 Click to change photo</span>
+              <input type="file" accept="image/*" class="photo-input" data-target="childhood-1">
+            </div>
+            <div class="tap-hint">🔍 Tap to view full photo</div>
+          </div>
+          <div class="polaroid-caption-wrap">
+            <p class="polaroid-caption handwritten editable" data-key="childhood_cap_1">
+              🤍 That innocent smile that didn't
+              know he'd steal my whole heart one day 🧸
+            </p>
+          </div>
+        </article>
+
+        <!-- Real School Days Photo 02 -->
+        <article class="polaroid-card polaroid-hero tilt-right" data-photo-id="childhood-2">
+          <div class="pin-sticker">📌</div>
+          <div class="photo-frame portrait-frame">
+            <img src="images/childhood-2.jpg" alt="Wasthu School Days" class="scrapbook-img photo-portrait-center"
+              data-caption="Wasthu's School Days • White school uniform eken sunglasses daala inna ape handsome boy 😎 So charming and confident!">
+            <div class="photo-overlay-upload">
+              <span>📷 Click to change photo</span>
+              <input type="file" accept="image/*" class="photo-input" data-target="childhood-2">
+            </div>
+            <div class="tap-hint">🔍 Tap to view full photo</div>
+          </div>
+          <div class="polaroid-caption-wrap">
+            <p class="polaroid-caption handwritten editable" data-key="childhood_cap_2">
+              😎 School uniform & shades • That charming school boy who grew up into the man of my dreams 🤍
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="scrapbook-footer-note">
+        <span class="note-paper handwritten editable" data-key="childhood_footer">
+          "I wish I was there to see your little steps, but I am so grateful I get to hold your hands for all the steps
+          ahead."
+        </span>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         3. OUR LOVE STORY (2019–2026): NATURAL SCRAPBOOK TIMELINE
+         =================================================================== -->
+    <section class="section-block" id="story">
+      <div class="section-header">
+        <div class="tape-strip"></div>
+        <span class="chapter-number">Chapter 02</span>
+        <h2 class="section-title handwritten editable" data-key="story_title">Our Love Story • 2019 to 2026</h2>
+        <p class="section-desc editable" data-key="story_desc">Seven years of real memories, laughter, silent tears,
+          quiet promises, and growing up together. Every single year made us stronger.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-thread"></div>
+
+        <!-- 2019 -->
+        <div class="timeline-entry" data-year="2019">
+          <div class="timeline-marker">
+            <span class="year-badge">2019</span>
+          </div>
+          <div class="timeline-card paper-sheet">
+            <div class="washi-tape-small"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2019_title">2019 • Mula, Where Our
+                Story Began</h3>
+              <span class="timeline-tag">The Beginning</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2019">
+                <img src="images/2019.jpg" alt="Wasthu and His Girlfriend in School Uniform - 2019"
+                  class="photo-portrait-center"
+                  data-caption="2019 • Ape kathawe mula... Both of us in our school uniforms when our love story quietly began ❤️">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2019" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2019_text">
+                  මුලින්ම අපි දෙන්නා අතර තිබුණේ පුංචි පුංචි Message විතරයි. අපි දෙන්නම ටිකක් ලැජ්ජාවෙන් තමයි කතා කළේ.
+                  ලොකු කතාබහක් නැහැ, නිකම්ම පුංචි මැසේජ් කිහිපයක් විතරයි.
+
+                  Class යන්න එනකොට තමයි අපි ටික ටික මුණගැහිලා කතා කරන්න පටන් ගත්තේ. ඒ පුංචි කතාබහවල් එදා අපිට සාමාන්‍ය
+                  දේවල් වුණත්, අද මතක් වෙද්දී හරිම ආදරණීය මතකයන්.
+
+                  අපි දෙන්නටම අපේ අනාගතය මොන වගේ වෙයිද කියලා අදහසක් තිබුණේ නැහැ. ඒත් ටිකෙන් ටික ඔයා මගේ ජීවිතේ හරිම
+                  විශේෂ කෙනෙක් බවට පත්වුණා.
+
+                  අද ආපහු ඒ දවස් දිහා බලද්දී මට හිතෙනවා, ඒ පුංචි Message කිහිපයෙන් පටන් ගත්ත අපේ කතාව මගේ ජීවිතේ ලස්සනම
+                  ආදර කතාව වෙයි කියලා එදා මම දැනගෙන හිටියේ නැහැ. 🥹❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2019_quote">"The first time you made me
+                  laugh until my stomach hurt."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2020 -->
+        <div class="timeline-entry" data-year="2020">
+          <div class="timeline-marker">
+            <span class="year-badge">2020</span>
+          </div>
+          <div class="timeline-card paper-sheet">
+            <div class="washi-tape-small tape-soft-pink"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2020_title">2020 • Finding Comfort in
+                Each Other</h3>
+              <span class="timeline-tag">Growing Close</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2020">
+                <img src="images/2020.jpg" alt="Memory of 2020 - Comfort in Each Other" class="photo-portrait-center"
+                  data-caption="2020 • Finding quiet peace and comfort right next to you ❤️">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2020" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2020_text">
+
+                  2020 අපි දෙන්නටම Exam කාලයක්. කොරෝනා නිසා හමුවෙන්න බැරි වුණත්, ඔයා මට Laptop එකෙන් Message කරන්න
+                  Dongle එකක් ගෙනත් දුන්න හැටි අදටත් මතකයි. දෙන්නම Busy වුණත්, අපේ ආදරේ නම් කවදාවත් අඩු වුණේ නැහැ. ❤️
+                  ඒ කාලේ අපේ පුංචි පුංචි Dates, Bus Rides, එකට කෑම කාපු හැටි, අපි දෙන්නටම විතරක් තේරුණු විහිළු එක්ක
+                  ගෙවුණු ලස්සන කාලයක්. ඔයාගේ ඒ හිනාවත්, මට දුන්න ආදරයත්, ගෞරවයත් අදටත් මගේ හිතේ ලස්සනම මතකයන්. ❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2020_quote">"Mage bayawal iwara wune
+                  oyage eka call ekakin."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="timeline-entry" data-year="2021">
+          <div class="timeline-marker">
+            <span class="year-badge">2021</span>
+          </div>
+          <div class="timeline-card paper-sheet">
+            <div class="washi-tape-small"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2021_title">2021 • Sweet Dates &
+                Little Inside Jokes</h3>
+              <span class="timeline-tag">Pure Happiness</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2021">
+                <img src="images/2021.jpg" alt="Memory of 2021 - Wasthu" class="photo-portrait-top"
+                  data-caption="2021 • Working hard and dreaming of our future together ❤️">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2021" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2021_text">
+                  ඒ කාලේ ඔයා Japan යන්න Exam කරන අතරේ Job එකකුත් කළා. මම ආයෙත් A/L Exam කළා. අපිට නිතර හමුවෙන්න, කතා
+                  කරන්න බැරි වුණත් ඒ කාලේ අපේ ආදරේ තවත් වැඩි වුණා. දුරස් වුණත් අපේ හිත්වල ආදරේ නම් කවදාවත් අඩු වුණේ
+                  නැහැ. ❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2021_quote">"Mata hithenawa mama loke
+                  inna pinwanthama kella kiyala oyawa labunata."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="timeline-entry" data-year="2022">
+          <div class="timeline-marker">
+            <span class="year-badge">2022</span>
+          </div>
+          <div class="timeline-card paper-sheet">
+            <div class="washi-tape-small tape-muted"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2022_title">2022 • Through the Storms
+                & Hard Days</h3>
+              <span class="timeline-tag">Real Strength</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2022">
+                <img src="images/2022.jpg" alt="Memory of 2022 - Together Always" style="object-position: center 65%;"
+                  data-caption="2022 • Even across the distance, our hearts always stayed right next to each other ❤️">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2022" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2022_text">
+                  හැමදාම සතුටින්ම ගෙවුණු කාලයක් නෙවෙයි අපේ ආදරේ. අපිටත් ප්‍රශ්න, තරහවීම්, දුක හිතෙන දවස් තිබුණා. ඒත් අපි
+                  කවදාවත් එකිනෙකාව අතහැරියේ නැහැ. සමාව දෙන්නත්, තේරුම් ගන්නත්, ඕනෑම දේකදී එකට ඉන්නත් අපි ඉගෙන ගත්තා. ❤️
+                  April ඔයා Japan ගිය අවුරුද්ද. ඒක මට ගොඩක් අමාරු කාලයක් වුණා. ඔයාගෙන් ඈත් වෙලා ඉන්න එකේ වේදනාව
+                  කොහොමහරි දරාගත්තා. ඔයා දුරට ගියාට පස්සෙයි මට තේරුණේ, ඔයා මගේ ජීවිතේ කොච්චර වටින කෙනෙක්ද, මගේ හුස්ම
+                  තරම්ම මට ඔයාව ඕනෙද කියලා. ❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2022_quote">"Api tharaha wunath, mata
+                  oyawa nathuwa ba kiyala mama hodatama therum gaththa."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="timeline-entry" data-year="2023">
+          <div class="timeline-marker">
+            <span class="year-badge">2023</span>
+          </div>
+          <div class="timeline-card paper-sheet">
+            <div class="washi-tape-small"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2023_title">2023 • Reaching
+                Milestones & Hard Work</h3>
+              <span class="timeline-tag">Dedication</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2023">
+                <img src="images/2023.jpg" alt="Wasthu Working Hard in Japan - 2023" class="photo-portrait-center"
+                  data-caption="2023 • Working hard in Japan for our dreams, with your Starbucks in hand ❤️">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2023" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2023_text">
+                  2023 ඔයාට Japan වල ඉගෙන ගන්න සල්ලි හොයාගන්න Job කරන ගමන් ගොඩක් දුක් විඳින්න වුණා. ඒ හැමදේම දකිද්දී
+                  මටත් ගොඩක් දුකයි. ඔයා ළඟට එන්න තිබුණා නම් කියලා හිතපු වාර අනන්තයි. ඒ අතරේ මගේ A/L Results ඇවිත් මම
+                  Campus එකට Select වුණා. අපි දෙන්නම අපේ හීන වෙනුවෙන් වෙන වෙනම මහන්සි වුණත්, අපේ ආදරේ හැමදාම එකට තිබුණා.
+                  ❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2023_quote">"Oyage me lassanama
+                  jayagrahanaya dakala mage hitha sathutin pirenawa."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="timeline-entry" data-year="2024">
+          <div class="timeline-marker">
+            <span class="year-badge">2024</span>
+          </div>
+          <div class="timeline-card paper-sheet">
+            <div class="washi-tape-small tape-peach"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2024_title">2024 • The Hard Goodbye &
+                Airport Departure</h3>
+              <span class="timeline-tag">A Brave Step</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2024">
+                <img src="images/2024.jpg" alt="Wasthu Graduation Milestone - 2024" class="photo-portrait-center"
+                  data-caption="2024 • Graduating with pride and honor in your black suit (卒業証書) 🎓❤️">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2024" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2024_text">
+                  2024 වෙද්දී ඔයා Japan ගිහින් අවුරුදු දෙකක්. අපි අතරත් පුංචි පුංචි ප්‍රශ්න ඇති වුණා. මට ඔයා ළඟට එන්න
+                  බැරි වුණත්, ඒ හැමදේම ඉවසගෙන අපි දෙන්නා එකිනෙකා අතනොහැර ඉස්සරහටම ආවා. දුර කොච්චර තිබුණත් අපේ ආදරේ
+                  අත්හැරියේ නැහැ. ❤️
+                  ඔයාගේ මහන්සිය දකිද්දී මට ඔයා ගැන තිබුණු ආදරය තවත් වැඩි වුණා. Japan වල වැඩ කරන ගමන් මහන්සි වෙලා ඉගෙනගෙන
+                  එකින් එක ජයග්‍රහණ ලබන හැටි මම ආඩම්බරයෙන් බලාගෙන හිටියා. Graduation certificate එකත් එක්ක කළු Suit එක
+                  ඇඳගෙන ආඩම්බරයෙන් හිටපු ඔයාව දැකපු දවසේ තරම් සතුටු වුණු දවසක් මට තවත් නැහැ. අපි දෙන්නා එකට දැකපු හීන
+                  ටික ටික සැබෑ වෙනවා දැක්කාම මට දැනුණේ කියාගන්න බැරි සතුටක්. ❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2024_quote">"Still Holding On ❤️"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="timeline-entry" data-year="2025">
+          <div class="timeline-marker">
+            <span class="year-badge">2025</span>
+          </div>
+          <div class="timeline-card paper-sheet">
+            <div class="washi-tape-small"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2025_title">2025 • Across 8,000
+                Kilometers & Life in Japan</h3>
+              <span class="timeline-tag">Long Distance</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2025">
+                <img src="images/2025.jpg" alt="Wasthu at Nara Deer Park in Japan" class="photo-portrait-center"
+                  data-caption="2025 • Wasthu exploring Japan, petting the deer in Nara 🦌🇯🇵">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2025" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2025_text">
+                  අපේ කාලය ගෙවුණේ Screen එකක් හරහා. පැය 3½ක Time Difference එකක් තිබුණත් WhatsApp Video Calls වලින්
+                  එකිනෙකා ළඟ ඉන්න උත්සාහ කළා. Japan වල කොච්චර Busy වුණත්, සීතලේ වැඩ කළත්, ඔයාගේ “Kewaada sudu?
+                  Parissamin inna” කියන පුංචි Message එක මට ලොකු සතුටක් වුණා. ඒ පුංචි ආදරය මට ගොඩක් වටිනවා. ❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2025_quote">"Screen eka asse thibunath
+                  ape aathmayawal thibune ekatama badila."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2026 -->
+        <div class="timeline-entry current-year" data-year="2026">
+          <div class="timeline-marker special-marker">
+            <span class="year-badge">2026</span>
+          </div>
+          <div class="timeline-card paper-sheet highlight-card">
+            <div class="washi-tape-small tape-rose"></div>
+            <div class="timeline-header-row">
+              <h3 class="timeline-year-title handwritten editable" data-key="story_2026_title">2026 • Today, Tomorrow &
+                Every Year After</h3>
+              <span class="timeline-tag gold">Today & Always</span>
+            </div>
+            <div class="timeline-media-row">
+              <div class="timeline-photo-slot" data-photo-id="story-2026">
+                <img src="images/2026.jpg" alt="Wasthu and His Girlfriend Together" class="photo-portrait-center"
+                  data-caption="2026 • Api dennama ekata... Always and forever by your side ❤️">
+                <div class="photo-overlay-upload">
+                  <span>📷 Change Photo</span>
+                  <input type="file" accept="image/*" data-target="story-2026" class="photo-input">
+                </div>
+                <div class="tap-hint">🔍 Tap to view</div>
+              </div>
+              <div class="timeline-text-body">
+                <p class="editable" data-key="story_2026_text">
+                  2026 වෙද්දී ඔයා හොඳ Job එකක් කරනවා. ඔයා අද ඉන්න තැන ගැන මට ගොඩක් සතුටුයි වගේම ආඩම්බරයි. ඔයාගේ මහන්සියේ
+                  ප්‍රතිඵල අද දකිද්දී මගේ හිතට දැනෙන්නේ කියාගන්න බැරි සතුටක්. ඔයා හැමදාම සතුටින් ඉන්න ඕනේ. කරන හැම
+                  වැඩක්ම සාර්ථක වෙන්න ඕනේ. ඔයාගේ ජීවිතේ හැම හීනයක්ම සැබෑ වෙන්න කියලා මම හදවතින්ම ප්‍රාර්ථනා කරනවා. මොකද
+                  ඔයා සතුටින් ඉන්නවා දකින එක තරම් මට වටින තවත් දෙයක් නැහැ. ❤️
+                </p>
+                <div class="memory-quote handwritten editable" data-key="story_2026_quote">"Mata oyaawa labune mage
+                  jeewithe lassanama thilline widiyata."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         4. LETTERS FOR YOU: INTERACTIVE STATIONERY CARDS
+         =================================================================== -->
+    <section class="section-block glass-chapter" id="letters">
+      <div class="section-header">
+        <div class="tape-strip"></div>
+        <span class="chapter-number">Chapter 03</span>
+        <h2 class="section-title handwritten editable" data-key="letters_title">Letters for You</h2>
+        <p class="section-desc editable" data-key="letters_desc">Words I don't always say out loud, written gently on
+          paper so you can read them whenever you feel lonely in Japan.</p>
+      </div>
+
+      <div class="letters-grid letters-single-center">
+
+        <!-- Letter 1 -->
+        <article class="letter-card folded">
+          <div class="envelope-tab">
+            <span class="envelope-seal">💌 Letter 01</span>
+            <span class="envelope-hint">Tap to open & read</span>
+          </div>
+          <div class="letter-paper">
+            <h4 class="letter-topic handwritten editable" data-key="letter_1_topic">To the man who works so hard in
+              Japan...</h4>
+            <div class="letter-text editable" data-key="letter_1_body">
+              <p>Mage Wasthuwa,</p>
+              <p>ඔයා එහේ කොච්චර මහන්සි වෙනවද කියලා මම දන්නවා. සමහර දවස්වල job වැඩයි, Study එක්ක ගොඩක් මහන්සි දැනෙනවා
+                ඇති. ගෙදර අයව මතක් වෙලා හිතට තනිකමක් දැනෙන දවසුත් ඇති.
+
+                මම හැම වෙලාවකම ඒක ඔයාට වචනවලින් කියන්න බැරි වුණත්, අපේ අනාගතය වෙනුවෙන් ඔයා කරන හැම කැපකිරීමක්ම, හැම
+                මහන්සියක්ම මම දකිනවා. ඒ හැමදේම මට ගොඩක් වටිනවා. 🥺❤️.</p>
+              <p>Whenever you feel tired, close your eyes for a second. Think of my hand holding yours. You are never
+                alone in this fight, because my heart is walking every single step right beside you. I am endlessly
+                proud of the man you are.</p>
+              <p>You don't always have to be strong. You don't have to carry the whole world on your shoulders all the
+                time.
+                මගේ ළඟ ඔයාට ඕනෑ තරම් තරහා වෙන්න, හිතේ තියෙන දුක කියන්න, අඬන්න පුළුවන්. ඔයාත් මනුෂ්‍යයෙක්නේ. හැමදාම
+                ශක්තිමත්ව ඉන්න අවශ්‍ය නැහැ. සමහර දවස්වල දුර්වල වෙන එකත් සාමාන්‍ය දෙයක්.</p>
+              <p>ඔයා සතුටින් ඉන්න දවස්වල විතරක් නෙවෙයි, දුකින් ඉන්න, නිහඬව ඉන්න දවස්වලත් මම ඔයා ළඟින් ඉන්නවා. ඔයාගේ ආදරය
+                ලබාගන්න හැම වෙලාවකම හිනා වෙලා ඉන්න අවශ්‍ය නැහැ.
+                මම ඔයාව හැමදාම ආදරයෙන් පිළිගන්නවා. 🥺❤️</p>
+              <p class="handwritten-sign">With all my respect & love,<br>ur love</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         5. MY VOICE: AUTHENTIC VOICE MESSAGE PLAYER
+         =================================================================== -->
+    <section class="section-block glass-chapter" id="voice">
+      <div class="section-header">
+        <div class="tape-strip"></div>
+        <span class="chapter-number">Chapter 04</span>
+        <h2 class="section-title handwritten editable" data-key="voice_title">My Voice </h2>
+        <p class="section-desc editable" data-key="voice_desc">Because some feelings can only be felt when you hear my
+          voice saying them directly to you.</p>
+      </div>
+
+      <div class="voice-player-container">
+        <div class="cassette-card">
+          <div class="cassette-tape-top">
+            <span class="tape-title handwritten">Special Birthday Voice Note for Wasthu 🎧</span>
+            <span class="tape-meta">Side A</span>
+          </div>
+
+          <!-- Cassette Spools Visual -->
+          <div class="cassette-window">
+            <div class="spool left" id="spoolLeft">
+              <div class="spool-center"></div>
+            </div>
+            <div class="audio-tape-strip"></div>
+            <div class="spool right" id="spoolRight">
+              <div class="spool-center"></div>
+            </div>
+          </div>
+
+          <!-- Audio Waveform Display -->
+          <div class="waveform-display" id="waveform">
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+          </div>
+
+          <!-- Controls -->
+          <div class="audio-controls-wrap">
+            <button class="btn-play" id="playBtn" aria-label="Play voice note">
+              <span id="playIcon">▶</span>
+            </button>
+
+            <div class="timeline-bar-wrap">
+              <input type="range" id="seekSlider" min="0" max="100" value="0" class="custom-slider">
+              <div class="time-readout">
+                <span id="currentTime">00:00</span> / <span id="totalDuration">00:03</span>
+              </div>
+            </div>
+
+            <div class="volume-wrap">
+              <span class="volume-icon">🔊</span>
+              <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.9" class="custom-slider-small">
+            </div>
+          </div>
+
+          <!-- Real HTML5 Audio Element -->
+          <audio id="realAudio" preload="auto">
+            <source src="audio/voice-message.ogg" type="audio/ogg">
+            <source src="audio/voice-message.mp3" type="audio/mpeg">
+            <source src="voice.mp3" type="audio/mpeg">
+          </audio>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         6. OUR FUTURE: SRI LANKA TO JAPAN DISTANCE CONNECTION
+         =================================================================== -->
+    <section class="section-block glass-chapter" id="future">
+      <div class="section-header">
+        <div class="tape-strip"></div>
+        <span class="chapter-number">Chapter 05</span>
+        <h2 class="section-title handwritten editable" data-key="future_title">Our Future • Sri Lanka to Japan</h2>
+        <p class="section-desc editable" data-key="future_desc">Thousands of kilometers between our cities, but not
+          even
+          a single millimeter between our hearts.</p>
+      </div>
+
+      <div class="connection-board paper-sheet">
+
+        <!-- Dual Live Clocks Section -->
+        <div class="dual-clocks-container">
+
+          <div class="clock-card colombo-clock">
+            <div class="clock-flag">🇱🇰 Sri Lanka</div>
+            <div class="clock-city">Kurunegala</div>
+            <div class="clock-digital" id="slTime">--:--:--</div>
+            <div class="clock-date" id="slDate">Loading date...</div>
+            <span class="clock-location-note">Where I am thinking of you right now</span>
+          </div>
+
+          <div class="clock-bridge">
+            <div class="red-string-graphic">
+              <span class="airplane-icon">✈</span>
+              <div class="dashed-connection-line"></div>
+              <span class="distance-pill">~8,000 km</span>
+            </div>
+            <div class="time-diff-pill">Japan is <strong>+3.5 hrs</strong> ahead</div>
+          </div>
+
+          <div class="clock-card tokyo-clock">
+            <div class="clock-flag">🇯🇵 Japan</div>
+            <div class="clock-city">Nagoya</div>
+            <div class="clock-digital" id="jpTime">--:--:--</div>
+            <div class="clock-date" id="jpDate">Loading date...</div>
+            <span class="clock-location-note">Where my favorite boy is working hard</span>
+          </div>
+
+        </div>
+
+        <!-- Life in Japan Photo Polaroids -->
+        <div class="japan-photos-strip">
+          <div class="japan-strip-header">
+            <span class="sub-tape-badge">🇯🇵 Snapshots from Japan</span>
+            <h4 class="japan-strip-title handwritten">Your Life Across the Ocean .</h4>
+          </div>
+
+          <div class="japan-polaroid-grid">
+
+            <!-- Photo 1: Wasthu with Yamaha R1 Bike in Japan -->
+            <article class="polaroid-card polaroid-japan tilt-left" data-photo-id="japan-bike">
+              <div class="pin-sticker">📌</div>
+              <div class="photo-frame portrait-frame">
+                <img src="images/wasthu-bike.jpg" alt="Wasthu with Yamaha R1 in Japan"
+                  class="scrapbook-img photo-portrait-top"
+                  data-caption="Wasthu in Japan 🏍️ • On his dream Yamaha R1 superbike! Always looks so handsome and cool in the streets of Japan 🇯🇵">
+                <div class="photo-overlay-upload">
+                  <span>📷 Click to change photo</span>
+                  <input type="file" accept="image/*" class="photo-input" data-target="japan-bike">
+                </div>
+                <div class="tap-hint">🔍 Tap to view full photo</div>
+              </div>
+              <div class="polaroid-caption-wrap">
+                <p class="polaroid-caption handwritten editable" data-key="japan_bike_cap">
+                  🏍️ So handsome & cool!
+                </p>
+              </div>
+            </article>
+
+            <!-- Photo 2: Wasthu in Japanese Winter -->
+            <article class="polaroid-card polaroid-japan tilt-right" data-photo-id="japan-winter">
+              <div class="pin-sticker">📌</div>
+              <div class="photo-frame portrait-frame">
+                <img src="images/wasthu-winter.jpg" alt="Wasthu in Japan Winter"
+                  class="scrapbook-img photo-portrait-top"
+                  data-caption="Japan Winter ❄️ • Surviving freezing winter days in his warm white jacket, working hard for our future 🤍">
+                <div class="photo-overlay-upload">
+                  <span>📷 Click to change photo</span>
+                  <input type="file" accept="image/*" class="photo-input" data-target="japan-winter">
+                </div>
+                <div class="tap-hint">🔍 Tap to view full photo</div>
+              </div>
+              <div class="polaroid-caption-wrap">
+                <p class="polaroid-caption handwritten editable" data-key="japan_winter_cap">
+                  ❄️ Staying warm while working hard for our tomorrows 🤍
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Future Promise Note -->
+        <div class="future-letter-box">
+          <div class="washi-tape-small tape-rose"></div>
+          <h3 class="future-note-title handwritten editable" data-key="future_promise_title">Until We Close the
+            Distance, Wasthu...</h3>
+          <p class="future-note-p editable" data-key="future_promise_text">
+            ඔයා ජපානයේ, මම ශ්‍රී ලංකාවේ හිටියත් අපේ හිත් තියෙන්නේ එකම තැනක.❤️<br><br>
+            Every single time zone difference we calculate, every time you tell me "Nidimathai sudu,Mahansie Wasthu"
+            when it is late
+            night there,Even those little words show how much we love each other. Every dream we share brings us
+            closer
+            to the day when distance is no longer between us and we can finally be together forever. 🥺❤️<br><br>
+
+            I believe in you. I believe in our dream. Thank you for being the most faithful, loving partner any girl
+            could ever wish for.<br><br>
+            Happy Birthday once again, Wasthu. May all your dreams in Japan come true, and may life bring you back
+            to my
+            arms very soon. ❤️
+          </p>
+          <div class="stamp-seal-end">
+            <div class="wax-seal">🤍</div>
+            <div class="sign-block">
+              <span class="sign-line handwritten">Yours forever and always,</span>
+              <span class="sign-name handwritten editable" data-key="future_signature">your's Wasthuu ✨</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===================================================================
+       FOOTER: AUTHENTIC SCRAPBOOK FINISH
+       =================================================================== -->
+  <footer class="diary-footer">
+    <div class="footer-wrap">
+      <p class="footer-sign handwritten"> ❤️</p>
+      <p class="footer-sub">Kurunegala🇱🇰 ✈ 🇯🇵 Nagoya | 2019 – 2026 and forever</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
